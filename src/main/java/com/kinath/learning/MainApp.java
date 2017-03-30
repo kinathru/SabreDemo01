@@ -25,10 +25,10 @@ public class MainApp
         HttpClient client = HttpClientBuilder.create().build();
         ObjectMapper objectMapper = new ObjectMapper();
         AuthResponse authResponse = WorkFlow.authenticate( authTokenReqString, client, objectMapper );
-        System.out.println(authResponse.getAccessToken());
+        System.out.println( authResponse.getAccessToken() );
 
-        FlightToResponse flightToResponse = WorkFlow.getFlightsToCity(authResponse.getAccessToken(),"DFW",client,objectMapper);
-        System.out.println("DONE");
+        FlightToResponse flightToResponse = WorkFlow.getFlightsToCity( authResponse.getAccessToken(), "DFW", client, objectMapper );
+        System.out.println( "DONE" );
     }
 
 }

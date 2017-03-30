@@ -51,7 +51,7 @@ public class WorkFlow
         return authResponse;
     }
 
-    public static FlightToResponse getFlightsToCity(String authToken, String iataCity, HttpClient client, ObjectMapper objectMapper)
+    public static FlightToResponse getFlightsToCity( String authToken, String iataCity, HttpClient client, ObjectMapper objectMapper )
     {
         HttpResponse httpResponse = null;
         FlightToResponse flightToResponse = null;
@@ -61,7 +61,7 @@ public class WorkFlow
 
         String url = ResourceConfig.FLIGHTS_TO_LOCATION_URL;
         url = url.replace( "{DEST}", iataCity );
-        HttpRequestBase clientRequest = HttpRequestUtils.generateRequest( url,headers,null,null,RequestType.GET );
+        HttpRequestBase clientRequest = HttpRequestUtils.generateRequest( url, headers, null, null, RequestType.GET );
         try
         {
             httpResponse = client.execute( clientRequest );
