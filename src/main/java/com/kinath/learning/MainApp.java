@@ -2,15 +2,11 @@ package com.kinath.learning;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.kinath.learning.config.UserConfig;
-import com.kinath.learning.sabre.AuthResponse;
+import com.kinath.learning.sabre.response.AuthResponse;
 import com.kinath.learning.sabre.WorkFlow;
 import com.kinath.learning.util.CodecUtils;
-import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-
-import java.io.IOException;
 
 /**
  * Created by kinath on 30/03/2017.

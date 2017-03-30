@@ -1,4 +1,4 @@
-package com.kinath.learning.sabre;
+package com.kinath.learning.sabre.response;
 
 import java.util.HashMap;
 import java.util.Map;
